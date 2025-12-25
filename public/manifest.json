@@ -1,0 +1,37 @@
+{
+  "name": "Moodakir - Digital Dhikr Companion",
+  "short_name": "Moodakir",
+  "description": "Modern dhikr counter with no-tap mode and global community features",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F172A",
+  "theme_color": "#10B981",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "health"],
+  "shortcuts": [
+    {
+      "name": "Start Counting",
+      "url": "/app",
+      "description": "Jump straight to counter"
+    },
+    {
+      "name": "View Stats",
+      "url": "/app/stats",
+      "description": "Check your progress"
+    }
+  ]
+}
