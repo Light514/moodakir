@@ -29,7 +29,7 @@ export function CounterButton({ onClick, label = 'Tap', className = '' }: Counte
     <motion.button
       whileTap={{ scale: 0.95 }}
       animate={isPressed ? {
-        scale: [0.95, 1.05, 1],
+        scale: 1.05,
       } : {
         scale: 1,
       }}
@@ -55,10 +55,16 @@ export function CounterButton({ onClick, label = 'Tap', className = '' }: Counte
       {/* Glow pulse effect */}
       <motion.div
         animate={isPressed ? {
-          scale: [1, 1.2, 1],
-          opacity: [0.5, 0, 0.5],
-        } : {}}
-        transition={{ duration: 0.6 }}
+          scale: 1.2,
+          opacity: 0,
+        } : {
+          scale: 1,
+          opacity: 0.5,
+        }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut"
+        }}
         className="absolute inset-0 rounded-full bg-emerald-400 blur-xl"
       />
 
