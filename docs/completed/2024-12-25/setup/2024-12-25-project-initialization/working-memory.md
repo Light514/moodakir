@@ -52,11 +52,22 @@
 - [hybrid_documentation_system.md](../../../hybrid_documentation_system.md) - Methodology reference
 
 ## Open Questions
-- None yet - user provided all necessary context
-- Will need Supabase URL and anon key when configuring client
+- None - all resolved
 
 ## Findings
-- N/A (fresh project)
+- Tailwind CSS v4 incompatible with Next.js 15 + next-pwa → Downgraded to v3.4.0
+- themeColor must be in viewport export (Next.js 15 change), not metadata
+- Supabase credentials received and configured successfully
+- Build time: ~74s for production build
 
 ## Dead Ends Explored
-- None yet
+- create-next-app: Tried using CLI but had interactive prompts → Created config files manually instead
+- Tailwind v4: Build failed with webpack errors → Reverted to v3.4.0 (stable)
+
+## Completion Notes
+- All todos completed successfully ✓
+- Build passes without errors ✓
+- TypeScript compiles without errors ✓
+- PWA configured and working ✓
+- Project committed (c9b91ea) and pushed to GitHub ✓
+- Ready for Phase 2: Core Counter development
